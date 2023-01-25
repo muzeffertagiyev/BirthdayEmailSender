@@ -35,17 +35,4 @@ if today_tuple in birthdays_data_dict:
 
 
 
-# for i in range(len(birthdays_data_dict['name'])):
-#     if month == birthdays_data_dict['month'][i] and day == birthdays_data_dict['day'][i]:
-#         with open(f'letter_templates/letter_{random.randint(1, 3)}.txt') as random_template:
-#             letter = random_template.read()
-#             new_letter = letter.replace('[NAME]', birthdays_data_dict['name'][i]).replace\
-#                 ('[AGE]', str(year - birthdays_data_dict['year'][i]))
-#         with smtplib.SMTP(host='smtp.gmail.com', port=587) as connection:
-#             connection.starttls()
-#             connection.login(user=MY_EMAIL, password=EMAIL_PASSWORD)
-#             connection.sendmail(from_addr=MY_EMAIL,
-#             to_addrs=birthdays_data['email'][i],
-#             msg=f'Subject:Happy Birthday!\n\n{new_letter}')
-#
-#             print('Email was sent successfully')
+
